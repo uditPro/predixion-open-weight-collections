@@ -1,0 +1,42 @@
+{
+  "qwen3.5:4b": {
+    "total": 200,
+    "overall": {
+      "n": 200,
+      "correct_tool_rate": 0.71,
+      "args_correct_rate": 0.68,
+      "malformed_rate": 0.03,
+      "spurious_rate": 0.0,
+      "missed_rate": 0.245
+    },
+    "english": {
+      "n": 52,
+      "correct_tool_rate": 0.8846,
+      "args_correct_rate": 0.8462,
+      "malformed_rate": 0.0385,
+      "spurious_rate": 0.0,
+      "missed_rate": 0.0962
+    },
+    "indic": {
+      "n": 148,
+      "correct_tool_rate": 0.6486,
+      "args_correct_rate": 0.6216,
+      "malformed_rate": 0.027,
+      "spurious_rate": 0.0,
+      "missed_rate": 0.2973
+    },
+    "en_indic_delta": -0.236,
+    "error_taxonomy": {
+      "wrong_tool:escalate_human->None": 18,
+      "wrong_tool:capture_ptp->None": 14,
+      "wrong_tool:mark_dispute->None": 9,
+      "wrong_tool:send_payment_link->None": 5,
+      "wrong_tool:send_payment_link->mark_dispute": 4,
+      "wrong_tool:log_disposition->None": 3,
+      "wrong_tool:escalate_human->mark_dispute": 2,
+      "bad_args:escalate_human": 2,
+      "bad_args:log_disposition": 2,
+      "wrong_tool:log_disposition->mark_dispute": 2
+    }
+  }
+}

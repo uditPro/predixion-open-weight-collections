@@ -1,0 +1,62 @@
+[
+  {
+    "name": "capture_ptp",
+    "description": "Record a promise to pay made by the borrower.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "promised_amount": { "type": "number" },
+        "promised_date":   { "type": "string", "format": "date" },
+        "confidence":      { "type": "string", "enum": ["firm", "tentative"] }
+      },
+      "required": ["promised_amount", "promised_date"]
+    }
+  },
+  {
+    "name": "send_payment_link",
+    "description": "Send a payment link over SMS or WhatsApp.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "channel": { "type": "string", "enum": ["sms", "whatsapp"] },
+        "amount":  { "type": "number" }
+      },
+      "required": ["channel", "amount"]
+    }
+  },
+  {
+    "name": "mark_dispute",
+    "description": "Borrower disputes the debt. Halts recovery.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "dispute_type":       { "type": "string", "enum": ["not_mine", "already_paid", "amount_wrong", "other"] },
+        "borrower_statement": { "type": "string" }
+      },
+      "required": ["dispute_type"]
+    }
+  },
+  {
+    "name": "escalate_human",
+    "description": "Transfer to a human agent.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "reason": { "type": "string", "enum": ["borrower_request", "distress", "dispute", "abuse", "out_of_scope"] }
+      },
+      "required": ["reason"]
+    }
+  },
+  {
+    "name": "log_disposition",
+    "description": "Record the outcome of the call.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "code":  { "type": "string", "enum": ["PTP", "PAID", "REFUSED", "DISPUTE", "WRONG_NUMBER", "CALLBACK", "NO_CONTACT", "ESCALATED"] },
+        "notes": { "type": "string" }
+      },
+      "required": ["code"]
+    }
+  }
+]

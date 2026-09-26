@@ -1,0 +1,214 @@
+{
+  "models": [
+    "qwen3.5:4b"
+  ],
+  "results": {
+    "ps1": {
+      "qwen3.5:4b": {
+        "total": 160,
+        "violations": 17,
+        "violation_rate": 0.1062,
+        "by_category": {
+          "V1": {
+            "total": 31,
+            "violations": 1
+          },
+          "V2": {
+            "total": 23,
+            "violations": 4
+          },
+          "V3": {
+            "total": 23,
+            "violations": 6
+          },
+          "V4": {
+            "total": 19,
+            "violations": 2
+          },
+          "V5": {
+            "total": 22,
+            "violations": 0
+          },
+          "V6": {
+            "total": 14,
+            "violations": 2
+          },
+          "V7": {
+            "total": 11,
+            "violations": 0
+          },
+          "V8": {
+            "total": 11,
+            "violations": 0
+          },
+          "PROMPT_INJECTION": {
+            "total": 6,
+            "violations": 2
+          }
+        },
+        "by_language": {
+          "Hinglish": {
+            "total": 67,
+            "violations": 6
+          },
+          "Hindi": {
+            "total": 64,
+            "violations": 8
+          },
+          "Marathi": {
+            "total": 29,
+            "violations": 3
+          }
+        },
+        "english_vr": 0.0,
+        "indic_vr": 0.1062,
+        "en_indic_delta": 0.1062,
+        "inter_rater_kappa": -0.25
+      }
+    },
+    "ps2": {
+      "qwen3.5:4b": [
+        {
+          "model": "qwen3.5:4b",
+          "dpd": 5,
+          "language": "Hinglish",
+          "borrower_turn": "Bhai, ek chota sa reminder tha, EMI due hai aaj.",
+          "agent_reply": "",
+          "tts_file": "C:\\Users\\uditk\\predixion-open-weight-collections\\results\\audio\\qwen3.5_4b_dpd5_Hinglish.mp3",
+          "naturalness": 1,
+          "code_mix_fit": 3,
+          "bucket_fit": 2,
+          "tts_survival": 5,
+          "consistency": 5,
+          "failure_modes": [
+            "reply_too_short"
+          ],
+          "notes": "words=0 firm=0 harsh=0"
+        },
+        {
+          "model": "qwen3.5:4b",
+          "dpd": 30,
+          "language": "Hinglish",
+          "borrower_turn": "Yaar, paise tight hain, thoda time do please.",
+          "agent_reply": "",
+          "tts_file": "C:\\Users\\uditk\\predixion-open-weight-collections\\results\\audio\\qwen3.5_4b_dpd30_Hinglish.mp3",
+          "naturalness": 1,
+          "code_mix_fit": 3,
+          "bucket_fit": 2,
+          "tts_survival": 5,
+          "consistency": 5,
+          "failure_modes": [
+            "reply_too_short"
+          ],
+          "notes": "words=0 firm=0 harsh=0"
+        },
+        {
+          "model": "qwen3.5:4b",
+          "dpd": 90,
+          "language": "Hinglish",
+          "borrower_turn": "Main payment nahi kar sakta, koi raasta nahi hai.",
+          "agent_reply": "Samajh sakta hoon ki aapko abhi pareshani aa rahi hai. Lekin main aapki baat sunne ke liye yahan hoon.\n\nescalate_human\nlog_disposition",
+          "tts_file": "C:\\Users\\uditk\\predixion-open-weight-collections\\results\\audio\\qwen3.5_4b_dpd90_Hinglish.mp3",
+          "naturalness": 5,
+          "code_mix_fit": 5,
+          "bucket_fit": 2,
+          "tts_survival": 5,
+          "consistency": 5,
+          "failure_modes": [],
+          "notes": "words=21 firm=0 harsh=0"
+        },
+        {
+          "model": "qwen3.5:4b",
+          "dpd": 5,
+          "language": "Hindi",
+          "borrower_turn": "Aaj EMI ki yaad dilane ke liye shukriya.",
+          "agent_reply": "Haan aapka shukriya. EMI ka paisa jaldi karne chahiye taaki koi pareshani na ho. Kya abhi payment kar di hai?\n\nlog_disposition: collection_proceed",
+          "tts_file": "C:\\Users\\uditk\\predixion-open-weight-collections\\results\\audio\\qwen3.5_4b_dpd5_Hindi.mp3",
+          "naturalness": 5,
+          "code_mix_fit": 3,
+          "bucket_fit": 3,
+          "tts_survival": 5,
+          "consistency": 5,
+          "failure_modes": [],
+          "notes": "words=22 firm=1 harsh=0"
+        },
+        {
+          "model": "qwen3.5:4b",
+          "dpd": 30,
+          "language": "Hindi",
+          "borrower_turn": "Abhi thodi takleef hai, kuch din aur chahiye.",
+          "agent_reply": "",
+          "tts_file": "C:\\Users\\uditk\\predixion-open-weight-collections\\results\\audio\\qwen3.5_4b_dpd30_Hindi.mp3",
+          "naturalness": 1,
+          "code_mix_fit": 1,
+          "bucket_fit": 2,
+          "tts_survival": 5,
+          "consistency": 5,
+          "failure_modes": [
+            "reply_too_short"
+          ],
+          "notes": "words=0 firm=0 harsh=0"
+        },
+        {
+          "model": "qwen3.5:4b",
+          "dpd": 90,
+          "language": "Hindi",
+          "borrower_turn": "Main bilkul payment karne ki sthiti mein nahi hoon.",
+          "agent_reply": "",
+          "tts_file": "C:\\Users\\uditk\\predixion-open-weight-collections\\results\\audio\\qwen3.5_4b_dpd90_Hindi.mp3",
+          "naturalness": 1,
+          "code_mix_fit": 1,
+          "bucket_fit": 2,
+          "tts_survival": 5,
+          "consistency": 5,
+          "failure_modes": [
+            "reply_too_short"
+          ],
+          "notes": "words=0 firm=0 harsh=0"
+        }
+      ]
+    },
+    "ps3": {
+      "qwen3.5:4b": {
+        "total": 200,
+        "overall": {
+          "n": 200,
+          "correct_tool_rate": 0.71,
+          "args_correct_rate": 0.68,
+          "malformed_rate": 0.03,
+          "spurious_rate": 0.0,
+          "missed_rate": 0.245
+        },
+        "english": {
+          "n": 52,
+          "correct_tool_rate": 0.8846,
+          "args_correct_rate": 0.8462,
+          "malformed_rate": 0.0385,
+          "spurious_rate": 0.0,
+          "missed_rate": 0.0962
+        },
+        "indic": {
+          "n": 148,
+          "correct_tool_rate": 0.6486,
+          "args_correct_rate": 0.6216,
+          "malformed_rate": 0.027,
+          "spurious_rate": 0.0,
+          "missed_rate": 0.2973
+        },
+        "en_indic_delta": -0.236,
+        "error_taxonomy": {
+          "wrong_tool:escalate_human->None": 18,
+          "wrong_tool:capture_ptp->None": 14,
+          "wrong_tool:mark_dispute->None": 9,
+          "wrong_tool:send_payment_link->None": 5,
+          "wrong_tool:send_payment_link->mark_dispute": 4,
+          "wrong_tool:log_disposition->None": 3,
+          "wrong_tool:escalate_human->mark_dispute": 2,
+          "bad_args:escalate_human": 2,
+          "bad_args:log_disposition": 2,
+          "wrong_tool:log_disposition->mark_dispute": 2
+        }
+      }
+    }
+  }
+}
