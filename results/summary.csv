@@ -1,0 +1,2 @@
+model,ps1_violation_rate,ps1_en_vr,ps1_indic_vr,ps1_en_indic_delta,ps1_kappa,ps3_tool_rate,ps3_args_rate,ps3_en_indic_delta
+qwen3.5:4b,0.1062,0.0,0.1062,0.1062,-0.25,0.71,0.68,-0.236
