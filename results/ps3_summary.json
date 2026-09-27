@@ -1,42 +1,42 @@
 {
-  "sarvam/sarvam-105b-conversations": {
+  "qwen-voice": {
     "total": 200,
     "overall": {
       "n": 200,
-      "correct_tool_rate": 0.825,
-      "args_correct_rate": 0.81,
-      "malformed_rate": 0.015,
+      "correct_tool_rate": 0.6,
+      "args_correct_rate": 0.54,
+      "malformed_rate": 0.06,
       "spurious_rate": 0.0,
-      "missed_rate": 0.125
+      "missed_rate": 0.335
     },
     "english": {
       "n": 52,
-      "correct_tool_rate": 0.8846,
-      "args_correct_rate": 0.8846,
-      "malformed_rate": 0.0,
+      "correct_tool_rate": 0.8269,
+      "args_correct_rate": 0.8077,
+      "malformed_rate": 0.0192,
       "spurious_rate": 0.0,
-      "missed_rate": 0.0385
+      "missed_rate": 0.1346
     },
     "indic": {
       "n": 148,
-      "correct_tool_rate": 0.8041,
-      "args_correct_rate": 0.7838,
-      "malformed_rate": 0.0203,
+      "correct_tool_rate": 0.5203,
+      "args_correct_rate": 0.4459,
+      "malformed_rate": 0.0743,
       "spurious_rate": 0.0,
-      "missed_rate": 0.1554
+      "missed_rate": 0.4054
     },
-    "en_indic_delta": -0.0805,
+    "en_indic_delta": -0.3066,
     "error_taxonomy": {
-      "wrong_tool:mark_dispute->None": 10,
-      "wrong_tool:send_payment_link->None": 8,
-      "wrong_tool:capture_ptp->None": 5,
-      "wrong_tool:log_disposition->mark_dispute": 4,
-      "wrong_tool:log_disposition->escalate_human": 3,
+      "wrong_tool:escalate_human->None": 26,
+      "wrong_tool:send_payment_link->None": 15,
+      "wrong_tool:capture_ptp->None": 11,
+      "wrong_tool:mark_dispute->None": 9,
+      "wrong_tool:log_disposition->None": 6,
+      "bad_args:mark_dispute": 5,
+      "bad_args:send_payment_link": 5,
       "wrong_tool:escalate_human->mark_dispute": 2,
-      "wrong_tool:log_disposition->None": 2,
-      "bad_args:mark_dispute": 1,
-      "bad_args:escalate_human": 1,
-      "bad_args:log_disposition": 1
+      "wrong_tool:mark_dispute->capture_ptp": 2,
+      "wrong_tool:mark_dispute->send_payment_link": 2
     }
   }
 }

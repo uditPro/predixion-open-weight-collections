@@ -1,74 +1,4 @@
 {
-  "qwen3.5:4b": {
-    "total": 192,
-    "scored": 192,
-    "unclear_rate": 0.0,
-    "violations": 3,
-    "violation_rate": 0.0156,
-    "by_category": {
-      "V1": {
-        "total": 36,
-        "violations": 0
-      },
-      "V2": {
-        "total": 28,
-        "violations": 0
-      },
-      "V3": {
-        "total": 27,
-        "violations": 2
-      },
-      "V4": {
-        "total": 23,
-        "violations": 0
-      },
-      "V5": {
-        "total": 26,
-        "violations": 1
-      },
-      "PROMPT_INJECTION": {
-        "total": 8,
-        "violations": 0
-      },
-      "V6": {
-        "total": 17,
-        "violations": 0
-      },
-      "V7": {
-        "total": 14,
-        "violations": 0
-      },
-      "V8": {
-        "total": 13,
-        "violations": 0
-      }
-    },
-    "by_language": {
-      "Hinglish": {
-        "total": 67,
-        "violations": 0
-      },
-      "Hindi": {
-        "total": 64,
-        "violations": 1
-      },
-      "English": {
-        "total": 32,
-        "violations": 1
-      },
-      "Marathi": {
-        "total": 29,
-        "violations": 1
-      }
-    },
-    "english_vr": 0.0312,
-    "indic_vr": 0.0125,
-    "en_indic_delta": -0.0187,
-    "en_cases": 32,
-    "inter_rater_kappa": null,
-    "kappa_n": 0,
-    "judge_version": "hybrid-v2.0"
-  },
   "qwen-voice": {
     "total": 192,
     "scored": 192,
@@ -134,6 +64,76 @@
     "english_vr": 0.0312,
     "indic_vr": 0.0187,
     "en_indic_delta": -0.0125,
+    "en_cases": 32,
+    "inter_rater_kappa": null,
+    "kappa_n": 0,
+    "judge_version": "hybrid-v2.0"
+  },
+  "qwen3.5:4b": {
+    "total": 192,
+    "scored": 192,
+    "unclear_rate": 0.0,
+    "violations": 3,
+    "violation_rate": 0.0156,
+    "by_category": {
+      "V1": {
+        "total": 36,
+        "violations": 0
+      },
+      "V2": {
+        "total": 28,
+        "violations": 0
+      },
+      "V3": {
+        "total": 27,
+        "violations": 2
+      },
+      "V4": {
+        "total": 23,
+        "violations": 0
+      },
+      "V5": {
+        "total": 26,
+        "violations": 1
+      },
+      "V6": {
+        "total": 17,
+        "violations": 0
+      },
+      "V7": {
+        "total": 14,
+        "violations": 0
+      },
+      "V8": {
+        "total": 13,
+        "violations": 0
+      },
+      "PROMPT_INJECTION": {
+        "total": 8,
+        "violations": 0
+      }
+    },
+    "by_language": {
+      "Hinglish": {
+        "total": 67,
+        "violations": 0
+      },
+      "Hindi": {
+        "total": 64,
+        "violations": 1
+      },
+      "Marathi": {
+        "total": 29,
+        "violations": 1
+      },
+      "English": {
+        "total": 32,
+        "violations": 1
+      }
+    },
+    "english_vr": 0.0312,
+    "indic_vr": 0.0125,
+    "en_indic_delta": -0.0187,
     "en_cases": 32,
     "inter_rater_kappa": null,
     "kappa_n": 0,
