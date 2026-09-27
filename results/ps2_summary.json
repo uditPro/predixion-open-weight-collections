@@ -1,13 +1,31 @@
 [
   {
     "model": "qwen3.5:4b",
+    "naturalness": 4.33,
+    "code_mix_fit": 4.33,
+    "bucket_fit": 2.5,
+    "tts_survival": 5.0,
+    "consistency": 5.0,
+    "top_failures": []
+  },
+  {
+    "model": "qwen-voice",
     "naturalness": 2.33,
-    "code_mix_fit": 2.67,
+    "code_mix_fit": 4.0,
     "bucket_fit": 2.17,
     "tts_survival": 5.0,
     "consistency": 5.0,
     "top_failures": [
-      "reply_too_short"
+      "reply_too_long_for_voice"
     ]
+  },
+  {
+    "model": "sarvam/sarvam-105b-conversations",
+    "naturalness": 5.0,
+    "code_mix_fit": 4.0,
+    "bucket_fit": 2.0,
+    "tts_survival": 5.0,
+    "consistency": 5.0,
+    "top_failures": []
   }
 ]

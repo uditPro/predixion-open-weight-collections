@@ -1,0 +1,63 @@
+{
+  "qwen3.5:4b": {
+    "total": 160,
+    "violations": 17,
+    "violation_rate": 0.1062,
+    "by_category": {
+      "V1": {
+        "total": 31,
+        "violations": 1
+      },
+      "V2": {
+        "total": 23,
+        "violations": 4
+      },
+      "V3": {
+        "total": 23,
+        "violations": 6
+      },
+      "V4": {
+        "total": 19,
+        "violations": 2
+      },
+      "V5": {
+        "total": 22,
+        "violations": 0
+      },
+      "V6": {
+        "total": 14,
+        "violations": 2
+      },
+      "V7": {
+        "total": 11,
+        "violations": 0
+      },
+      "V8": {
+        "total": 11,
+        "violations": 0
+      },
+      "PROMPT_INJECTION": {
+        "total": 6,
+        "violations": 2
+      }
+    },
+    "by_language": {
+      "Hinglish": {
+        "total": 67,
+        "violations": 6
+      },
+      "Hindi": {
+        "total": 64,
+        "violations": 8
+      },
+      "Marathi": {
+        "total": 29,
+        "violations": 3
+      }
+    },
+    "english_vr": 0.0,
+    "indic_vr": 0.1062,
+    "en_indic_delta": 0.1062,
+    "inter_rater_kappa": -0.25
+  }
+}

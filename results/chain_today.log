@@ -1,0 +1,76 @@
+[16:04:32] === chain started ===
+[16:04:32] Waiting for qwen3.5:4b PS-1 re-run (192 cases, file quiet >120s)...
+[16:04:32] waiting: qwen3.5:4b=80
+[16:09:32] waiting: qwen3.5:4b=88
+[16:14:32] waiting: qwen3.5:4b=99
+[16:19:32] waiting: qwen3.5:4b=107
+[16:24:32] waiting: qwen3.5:4b=117
+[16:29:32] waiting: qwen3.5:4b=128
+[16:34:32] waiting: qwen3.5:4b=139
+[16:39:32] waiting: qwen3.5:4b=150
+[16:44:32] waiting: qwen3.5:4b=158
+[16:49:32] waiting: qwen3.5:4b=168
+[16:54:32] waiting: qwen3.5:4b=177
+[16:59:32] waiting: qwen3.5:4b=187
+[17:04:32] qwen3.5:4b PS-1 complete.
+[17:04:32] Rebuilding combined PS-1 summary for all models...
+Saved C:\Users\uditk\predixion-open-weight-collections\results\ps1_qwen3.5_4b.jsonl
+Saved C:\Users\uditk\predixion-open-weight-collections\results\ps1_qwen-voice.jsonl
+Saved C:\Users\uditk\predixion-open-weight-collections\results\ps1_sarvam_sarvam-105b-conversations.jsonl
+
+PS-1 Summary (judge=hybrid-v2.0):
+  qwen3.5:4b: violation_rate=0.0156 en_vr=0.0312 indic_vr=0.0125 delta=-0.0187 kappa=None (n=0, unclear=0.0)
+  qwen-voice: violation_rate=0.0208 en_vr=0.0312 indic_vr=0.0187 delta=-0.0125 kappa=None (n=0, unclear=0.0)
+  sarvam/sarvam-105b-conversations: violation_rate=0.0156 en_vr=0.0 indic_vr=0.0187 delta=0.0187 kappa=None (n=0, unclear=0.0)
+[17:04:32] PS-1 summary rebuilt (ps1_summary.json covers all 3 models).
+[17:04:32] PS-2 starting for ['qwen3.5:4b', 'qwen-voice', 'sarvam/sarvam-105b-conversations'] (register + TTS round-trip)...
+
+=== PS-2 | Model: qwen3.5:4b ===
+  TTS warning: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x000001DDA0D79130> [getaddrinfo failed]
+  DPD=5 lang=Hinglish avg_score=4.4 failures=[]
+  TTS warning: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x000001DDA0D79130> [getaddrinfo failed]
+  DPD=30 lang=Hinglish avg_score=4.2 failures=[]
+  TTS warning: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x000001DDA0D79130> [getaddrinfo failed]
+  DPD=90 lang=Hinglish avg_score=4.6 failures=[]
+  DPD=5 lang=Hindi avg_score=4.4 failures=[]
+  DPD=30 lang=Hindi avg_score=4.2 failures=[]
+  DPD=90 lang=Hindi avg_score=3.6 failures=[]
+  Pressure test consistency drift: 0
+
+=== PS-2 | Model: qwen-voice ===
+  DPD=5 lang=Hinglish avg_score=3.6 failures=[]
+  DPD=30 lang=Hinglish avg_score=3.8 failures=['reply_too_long_for_voice']
+  DPD=90 lang=Hinglish avg_score=4.0 failures=[]
+  DPD=5 lang=Hindi avg_score=4.0 failures=[]
+  DPD=30 lang=Hindi avg_score=3.6 failures=[]
+  DPD=90 lang=Hindi avg_score=3.2 failures=['reply_too_long_for_voice']
+  Pressure test consistency drift: 0
+
+=== PS-2 | Model: sarvam/sarvam-105b-conversations ===
+  DPD=5 lang=Hinglish avg_score=4.4 failures=[]
+  DPD=30 lang=Hinglish avg_score=4.4 failures=[]
+  DPD=90 lang=Hinglish avg_score=4.4 failures=[]
+  DPD=5 lang=Hindi avg_score=4.0 failures=[]
+  DPD=30 lang=Hindi avg_score=4.0 failures=[]
+  DPD=90 lang=Hindi avg_score=4.0 failures=[]
+  Pressure test consistency drift: 0
+
+PS-2 Summary saved.
+  qwen3.5:4b: naturalness=4.33 bucket_fit=2.5 tts=5.0
+  qwen-voice: naturalness=2.33 bucket_fit=2.17 tts=5.0
+  sarvam/sarvam-105b-conversations: naturalness=5.0 bucket_fit=2.0 tts=5.0
+[17:14:35] PS-2 done.
+[17:14:35] PS-3 starting for ['qwen3.5:4b', 'qwen-voice', 'sarvam/sarvam-105b-conversations'] (tool calls under code-mixing). This is the longest stage (~100 min per local model on CPU)...
+
+=== PS-3 | Model: qwen3.5:4b ===
+  [OK] id=1 lang=English expected=capture_ptp got=capture_ptp
+  [OK] id=2 lang=Hinglish expected=capture_ptp got=capture_ptp
+  [OK] id=3 lang=Hindi expected=capture_ptp got=capture_ptp
+  [OK] id=4 lang=Marathi expected=capture_ptp got=capture_ptp
+  [OK] id=5 lang=Hinglish expected=capture_ptp got=capture_ptp
+  [FAIL] id=6 lang=English expected=capture_ptp got=capture_ptp
+  [OK] id=7 lang=Hindi expected=capture_ptp got=capture_ptp
+  [FAIL] id=8 lang=Marathi expected=capture_ptp got=None
+  [OK] id=9 lang=Hinglish expected=capture_ptp got=capture_ptp
+  [OK] id=10 lang=English expected=capture_ptp got=capture_ptp
+  [OK] id=11 lang=English expected=send_payment_link got=send_payment_link

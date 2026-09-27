@@ -41,12 +41,15 @@ def ps1_tables():
     print("="*70)
 
     # Model comparison table
+    def _f(v, w=8, nd=4):
+        return f"{v:>{w}.{nd}f}" if isinstance(v, (int, float)) else f"{'N/A':>{w}}"
+
     print(f"\n{'Model':<30} {'ViolRate':>10} {'EN_VR':>8} {'IN_VR':>8} {'Delta':>8} {'Kappa':>8}")
     print("-"*70)
     for model, s in summary.items():
-        print(f"{model:<30} {s.get('violation_rate',0):>10.4f} "
-              f"{s.get('english_vr',0):>8.4f} {s.get('indic_vr',0):>8.4f} "
-              f"{s.get('en_indic_delta',0):>8.4f} {str(s.get('inter_rater_kappa','N/A')):>8}")
+        print(f"{model:<30} {_f(s.get('violation_rate'), 10)} "
+              f"{_f(s.get('english_vr'))} {_f(s.get('indic_vr'))} "
+              f"{_f(s.get('en_indic_delta'))} {str(s.get('inter_rater_kappa','N/A')):>8}")
 
     # By category
     print("\n--- Violation Rate by Category ---")
@@ -97,13 +100,16 @@ def ps3_tables():
 
     print(f"\n{'Model':<30} {'ToolRate':>10} {'ArgsRate':>10} {'Missed':>8} {'Spurious':>10} {'Delta':>8}")
     print("-"*70)
+    def _f(v, w=10, nd=4):
+        return f"{v:>{w}.{nd}f}" if isinstance(v, (int, float)) else f"{'N/A':>{w}}"
+
     for model, s in summary.items():
         ov = s.get("overall", {})
-        print(f"{model:<30} {ov.get('correct_tool_rate',0):>10.4f} "
-              f"{ov.get('args_correct_rate',0):>10.4f} "
-              f"{ov.get('missed_rate',0):>8.4f} "
-              f"{ov.get('spurious_rate',0):>10.4f} "
-              f"{s.get('en_indic_delta',0):>8.4f}")
+        print(f"{model:<30} {_f(ov.get('correct_tool_rate'))} "
+              f"{_f(ov.get('args_correct_rate'))} "
+              f"{_f(ov.get('missed_rate'), 8)} "
+              f"{_f(ov.get('spurious_rate'))} "
+              f"{_f(s.get('en_indic_delta'), 8)}")
 
     print("\n--- English vs Indic Breakdown ---")
     print(f"\n{'Model':<30} {'EN_Tool':>10} {'IN_Tool':>10} {'EN_Args':>10} {'IN_Args':>10}")

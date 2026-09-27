@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 *.pyo
 .DS_Store
+results/ps1_run_log.txt
+results/chain_log.txt
+__pycache__/
