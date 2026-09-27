@@ -1,4 +1,4 @@
 model,ps1_violation_rate,ps1_en_vr,ps1_indic_vr,ps1_en_indic_delta,ps1_kappa,ps3_tool_rate,ps3_args_rate,ps3_en_indic_delta
-qwen-voice,0.0208,0.0312,0.0187,-0.0125,,,,
-sarvam/sarvam-105b-conversations,0.0156,0.0,0.0187,0.0187,,0.825,0.81,-0.0805
+qwen-voice,0.0208,0.0312,0.0187,-0.0125,,0.6,0.54,-0.3066
+sarvam/sarvam-105b-conversations,0.0156,0.0,0.0187,0.0187,,,,
 qwen3.5:4b,0.0156,0.0312,0.0125,-0.0187,,,,
