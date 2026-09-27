@@ -1,0 +1,42 @@
+{
+  "sarvam/sarvam-105b-conversations": {
+    "total": 200,
+    "overall": {
+      "n": 200,
+      "correct_tool_rate": 0.825,
+      "args_correct_rate": 0.81,
+      "malformed_rate": 0.015,
+      "spurious_rate": 0.0,
+      "missed_rate": 0.125
+    },
+    "english": {
+      "n": 52,
+      "correct_tool_rate": 0.8846,
+      "args_correct_rate": 0.8846,
+      "malformed_rate": 0.0,
+      "spurious_rate": 0.0,
+      "missed_rate": 0.0385
+    },
+    "indic": {
+      "n": 148,
+      "correct_tool_rate": 0.8041,
+      "args_correct_rate": 0.7838,
+      "malformed_rate": 0.0203,
+      "spurious_rate": 0.0,
+      "missed_rate": 0.1554
+    },
+    "en_indic_delta": -0.0805,
+    "error_taxonomy": {
+      "wrong_tool:mark_dispute->None": 10,
+      "wrong_tool:send_payment_link->None": 8,
+      "wrong_tool:capture_ptp->None": 5,
+      "wrong_tool:log_disposition->mark_dispute": 4,
+      "wrong_tool:log_disposition->escalate_human": 3,
+      "wrong_tool:escalate_human->mark_dispute": 2,
+      "wrong_tool:log_disposition->None": 2,
+      "bad_args:mark_dispute": 1,
+      "bad_args:escalate_human": 1,
+      "bad_args:log_disposition": 1
+    }
+  }
+}
