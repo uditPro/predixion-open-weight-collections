@@ -74,3 +74,4 @@ PS-2 Summary saved.
   [OK] id=9 lang=Hinglish expected=capture_ptp got=capture_ptp
   [OK] id=10 lang=English expected=capture_ptp got=capture_ptp
   [OK] id=11 lang=English expected=send_payment_link got=send_payment_link
+  [OK] id=12 lang=Hinglish expected=send_payment_link got=send_payment_link
